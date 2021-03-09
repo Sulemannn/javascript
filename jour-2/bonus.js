@@ -1,0 +1,1 @@
+var random = Math.random(1, 6)
