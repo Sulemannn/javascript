@@ -6,13 +6,14 @@ var cat2 = {
 }
 
 var cats = {             
-    cat: ["Garfield", 3, true]
-    cat2: ["Miaouss", 5, false]
+    cat: ["Garfield", 3, true],
+    cat2: ["Miaouss", 5, false],
 }
 
 
 
 console.log(cats.cat);
+console.log(cats.cat2);
 
 
 
