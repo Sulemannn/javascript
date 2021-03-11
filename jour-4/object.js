@@ -2,7 +2,7 @@ var cat = {
     name: "Garfield",
     age: 3,
     isCute: true, 
-}
+};
 
 
 console.log(cat);
