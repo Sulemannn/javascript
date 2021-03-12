@@ -1,3 +1,8 @@
+var cat = {
+    name: "Garfield",
+    age: 3,
+    isCute: true, 
+}
 
 var cat2 = {
     name: "Miaouss",
@@ -5,14 +10,13 @@ var cat2 = {
     isCute: false,
 }
 
-var cats = {
-    cat = ["Garfield", 3, true]
-    cat2 = ["Miaouss", 5, false]
-}
+var cats = [ cat, cat2 ]
 
+// Affichez la valeur de age de cat dans la console
 
-console.log(cats.cat);
-console.log(cats.cat2);
+console.log(cat.age);
 
+// Affichez la valeur de isCute de cat2 dans la console
 
+console.log(cat2.isCute);
 
