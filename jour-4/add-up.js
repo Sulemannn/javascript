@@ -3,7 +3,7 @@ function addUp(num) {
     var result = 0;
     for (var i = 1; i <= num ; i++) {
         result = result +i
-        // result += i
+        //ou écrire > result += i
     }
     console.log(result);
 }
