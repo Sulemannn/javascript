@@ -1,32 +1,40 @@
-
-function calculate(num1, oper, num2){
-
-    var a = parseInt(num1);
-    var b = parseInt(num2);
-    var oper = operator;
-    var calcul = a + oper + b;
-
-    console.log(calcul);
-
-    if (oper === "*"){
-        console.log("a*b", a*b);
+function calculate(nmb1, nmb2, oper) {
+    var a = parseInt(nmb1);
+    var b = parseInt(nmb2);
+    var rslt =0
+    if (oper == "*") {
+        rslt = a*b 
+        console.log(rslt);
     }
-    else if(oper === "+"){
-        console.log("a+b", a+b);
+    else if (oper == "+") {
+        rslt = a+b 
+        console.log(rslt);
     }
-    else if(oper === "-"){
-        console.log("a-b", a-b);
+    else if (oper == "-") {
+        rslt = a-b 
+        console.log(rslt);
     }
-    else if(oper === "/"){
-        console.log("a/b", a/b);
+    else if (oper == "/") {
+        rslt = a/b 
+        console.log(rslt);
     }
-    else if(oper === "%"){
-        console.log("a%b", a%b);
+    else if (oper == "%") {
+        rslt = a%b 
+        console.log(rslt);
     }
     else {
-        console.log("error");        
+        console.log(err);
+        return;
+
     }
-​
 }
-​
-calculate(5, x, 4);
+var num1 = process.argv[2];
+console.log("num1",num1)
+var num2 = process.argv[3];
+console.log("num2",num2)
+var oper = process.argv[4];
+console.log("oper",oper)
+calculate(num1, num2, oper)
+
+
+
