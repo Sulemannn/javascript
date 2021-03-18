@@ -12,6 +12,7 @@ function formatDate(str) {
 }
 
 formatDate("1999-04-03")
+formatDate("1855-12-05")
 
 
 
