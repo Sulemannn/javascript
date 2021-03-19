@@ -9,8 +9,9 @@ console.log(cat);
 
 // affichez valeur de age
 console.log(cat.age);
+console.log(cat["age"]);
 
 // affichez so cute si c'est vrai
-if (isCute = true) {
+if (cat.isCute) {
     console.log("So cute !");
 }
