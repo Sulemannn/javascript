@@ -74,4 +74,4 @@ function play() {
 
 // prompt.start(); // démarre le prompt
 
-play();
+play();localStorage
