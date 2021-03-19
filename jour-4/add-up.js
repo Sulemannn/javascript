@@ -1,13 +1,13 @@
-
 function addUp(num) {
-    var result = 0;
-    for (var i = 1; i <= num ; i++) {
-        result = result +i
-        //ou écrire > result += i
+    var sum = 0;
+
+    for (var i = 1; i <= num; i++) {
+        sum += i;
     }
-    console.log(result);
+
+    return sum;
 }
 
-
-
+var result = addUp(12);
+console.log(result);
 addUp(12);
