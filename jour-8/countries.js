@@ -6,13 +6,26 @@
 // - Créez une fonction asynchrone `getCountries` pour récupérer les pays et stocker leurs noms dans l'array
 // - Afficher les noms des pays récupérés dans la console, séparés par un tiret
 
-var countriesNames = []
+function getCountries() {
+  request.get("https://restcountries.eu/rest/v2/all", function(error, response, body) {
+      var countries = JSON.parse(body);
+      
+      /*
+      var countriesNames = [];
+      for (var i = 0; i < countries.length; i++) {
+          var country = countries[i];
+          countriesNames.push(country.name);
+      }
+      console.log(countriesNames.join("-"));
+      */
 
-var request = require("request");
+     var countriesNames = countries.map(function(element) {
+         return element.name;
+     })
 
-request.get("https://restcountries.eu/rest/v2/name/all", function (err, res, body) {
-    var firstCountry = JSON.parse(body);
+     console.log(countriesNames.join("-"));
+  });
 
-        console.log("same currency between", firstCountry[0].name, "and", secondCountry[0].name,
-				(firstCountry[0].currencies[0].code === secondCountry[0].currencies[0].code));
-    });
+}
+
+getCountries();

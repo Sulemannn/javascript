@@ -15,20 +15,18 @@ function catchPokemon(id) {
 
         "https://pokeapi.co/api/v2/pokemon/" + id,
 
-        function (err, res, body){
+        function (err, res, body) {
             // console.log(body);
             var pokemon = JSON.parse(body)
 
             console.log(pokemon.name);
 
-            
+
         }
 
     )
 
 };
 
-catchPokemon(1);
-catchPokemon(14);
-catchPokemon(33);
-catchPokemon(25);
+catchPokemon(1); // bulbasaur
+catchPokemon(25); //pikachu
